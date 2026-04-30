@@ -13,9 +13,12 @@ const navItems = [
   { label: "Galeri", href: "/#galeri" },
 ];
 
+import { useNavigate } from "react-router-dom";
+
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -53,7 +56,7 @@ export const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <Button variant="copper" size="sm" onClick={() => window.location.href = '/login'}>
+          <Button variant="copper" size="sm" onClick={() => navigate('/login')}>
             Login Anggota
           </Button>
         </div>
