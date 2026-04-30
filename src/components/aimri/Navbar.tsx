@@ -53,9 +53,6 @@ export const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="/members" className="text-sm font-medium text-silver hover:text-copper transition-colors">
-            Direktori Anggota
-          </a>
           <Button variant="copper" size="sm" onClick={() => window.location.href = '/login'}>
             Login Anggota
           </Button>

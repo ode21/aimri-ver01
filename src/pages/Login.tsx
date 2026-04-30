@@ -7,17 +7,18 @@ import { Lock } from "lucide-react";
 import { toast } from "sonner";
 
 const Login = () => {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password.trim() !== "") {
+    if (username === "anggota aimri" && password === "anggotaaimri") {
       localStorage.setItem("isAimriMember", "true");
       toast.success("Login berhasil", { description: "Selamat datang di Direktori Anggota AIMRI." });
       navigate("/members");
     } else {
-      toast.error("Gagal", { description: "Silakan masukkan kata sandi." });
+      toast.error("Gagal", { description: "Nama pengguna atau kata sandi tidak valid." });
     }
   };
 
@@ -33,14 +34,23 @@ const Login = () => {
             Akses Khusus Anggota
           </h1>
           <p className="text-center text-muted-foreground text-sm mb-8">
-            Silakan masukkan kata sandi (mock: ketik apa saja) untuk mengakses direktori lengkap anggota AIMRI.
+            Silakan masukkan kredensial Anda untuk mengakses direktori lengkap anggota AIMRI.
           </p>
           
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <input
+                type="text"
+                placeholder="Nama Pengguna"
+                className="w-full bg-background border border-border rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-copper transition-colors"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
+            <div>
+              <input
                 type="password"
-                placeholder="Kata Sandi Anggota"
+                placeholder="Kata Sandi"
                 className="w-full bg-background border border-border rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-copper transition-colors"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
