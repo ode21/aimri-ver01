@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import logo from "@/assets/aimri-logo-transparent.png";
 
 export const Footer = () => {
   return (
@@ -7,15 +8,15 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-sm bg-gradient-copper flex items-center justify-center font-display font-black text-white text-xl shadow-copper">
-                A
+            <a href="/#beranda" className="inline-block mb-6 group">
+              <div className="h-20 md:h-24 flex items-center">
+                <img 
+                  src={logo} 
+                  alt="Logo AIMRI" 
+                  className="h-full w-auto object-contain scale-150 origin-left drop-shadow-[0_0_8px_rgba(255,255,255,0.2)] group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)] transition-all duration-300" 
+                />
               </div>
-              <div className="leading-tight">
-                <div className="font-display font-extrabold text-white text-xl">AIMRI</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-silver/70">Mineral Indonesia</div>
-              </div>
-            </div>
+            </a>
             <p className="text-sm leading-relaxed text-silver/80 mb-6 max-w-sm">
               Asosiasi Industri Mineral Republik Indonesia — wadah strategis bagi pelaku industri mineral, akademisi, dan NGO untuk membangun masa depan berkelanjutan.
             </p>
