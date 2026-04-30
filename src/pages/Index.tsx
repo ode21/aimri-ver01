@@ -5,13 +5,14 @@ import About from "@/components/aimri/About";
 import VisionMission from "@/components/aimri/VisionMission";
 import Membership from "@/components/aimri/Membership";
 import Leadership from "@/components/aimri/Leadership";
+import Gallery from "@/components/aimri/Gallery";
 import CTA from "@/components/aimri/CTA";
 import Footer from "@/components/aimri/Footer";
 
 const Index = () => {
   useEffect(() => {
     document.title = "AIMRI — Asosiasi Industri Mineral Republik Indonesia";
-    const desc = "AIMRI mewadahi 105+ perusahaan, institusi, dan NGO untuk memajukan industri mineral Indonesia secara berkelanjutan. Sebelumnya APNIPER (2022).";
+    const desc = "AIMRI mewadahi 103+ perusahaan, institusi, dan NGO untuk memajukan industri mineral Indonesia secara berkelanjutan. Sebelumnya APNIPER (2022).";
     let m = document.querySelector('meta[name="description"]');
     if (!m) {
       m = document.createElement("meta");
@@ -37,6 +38,7 @@ const Index = () => {
       <VisionMission />
       <Membership />
       <Leadership />
+      <Gallery />
       <CTA />
       <Footer />
     </main>

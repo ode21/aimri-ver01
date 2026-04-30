@@ -48,9 +48,9 @@ export const About = () => {
                 <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-copper font-bold mb-1">
                   <Calendar className="h-3.5 w-3.5" /> 11 Januari 2022
                 </div>
-                <h3 className="font-display font-bold text-xl text-foreground">APNIPER Didirikan</h3>
+                <h3 className="font-display font-bold text-xl text-foreground">APNIPER For Sustainability</h3>
                 <p className="text-muted-foreground text-sm mt-1">
-                  Asosiasi Pengusaha Nikel Perjuangan resmi berdiri sebagai cikal bakal organisasi.
+                  Asosiasi Pengusaha Nikel Perjuangan For Sustainability
                 </p>
               </div>
               <div className="relative">
@@ -68,7 +68,7 @@ export const About = () => {
                 <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-copper font-bold mb-1">
                   <Sparkles className="h-3.5 w-3.5" /> Hari Ini
                 </div>
-                <h3 className="font-display font-bold text-xl text-foreground">105 Anggota Aktif</h3>
+                <h3 className="font-display font-bold text-xl text-foreground">103 Anggota Aktif</h3>
                 <p className="text-muted-foreground text-sm mt-1">
                   Jejaring kuat lintas sektor — perusahaan, akademisi, dan NGO — bergerak bersama menuju masa depan berkelanjutan.
                 </p>

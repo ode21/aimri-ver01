@@ -32,7 +32,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-silver/90 max-w-2xl mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Wadah strategis bagi <span className="text-white font-semibold">105 anggota</span> — dari perusahaan tambang, institusi pendidikan, hingga NGO lingkungan — yang bersinergi membangun masa depan mineral Indonesia yang maju, patuh, dan lestari.
+            Sebuah organisasi yang mewadahi para pelaku industri nikel meliputi berbagai sektor baik di pertambangan, lingkungan, institusi dan organisasi guna mewujudkan tata kelola industri mineral nasional yang progresif, berintegritas, dan berkelanjutan.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
@@ -48,7 +48,7 @@ export const Hero = () => {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl border-t border-white/10 pt-10 animate-fade-in" style={{ animationDelay: "0.6s" }}>
             {[
-              { v: "105+", l: "Anggota" },
+              { v: "103+", l: "Anggota" },
               { v: "2022", l: "Berdiri" },
               { v: "10+", l: "Bidang Usaha" },
               { v: "34", l: "Provinsi" },

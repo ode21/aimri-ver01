@@ -73,8 +73,8 @@ export const Footer = () => {
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="h-5 w-5 text-copper shrink-0" />
-                <a href="mailto:asosiasiindustrimineralrepublikindonesia@aimri.org" className="hover:text-copper transition-colors break-all">
-                  asosiasiindustrimineralrepublikindonesia@aimri.org
+                <a href="mailto:contact@aimriofficial.com" className="hover:text-copper transition-colors break-all">
+                  contact@aimriofficial.com
                 </a>
               </li>
             </ul>

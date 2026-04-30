@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/aimri-logo.png";
+import logo from "@/assets/aimri-logo-transparent.png";
 
 const navItems = [
-  { label: "Beranda", href: "#beranda" },
-  { label: "Tentang Kami", href: "#tentang" },
-  { label: "Visi & Misi", href: "#visi-misi" },
-  { label: "Struktur Organisasi", href: "#struktur" },
-  { label: "Anggota", href: "#anggota" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Beranda", href: "/#beranda" },
+  { label: "Tentang Kami", href: "/#tentang" },
+  { label: "Visi & Misi", href: "/#visi-misi" },
+  { label: "Struktur Organisasi", href: "/#struktur" },
+  { label: "Anggota", href: "/#anggota" },
+  { label: "Galeri", href: "/#galeri" },
 ];
 
 export const Navbar = () => {
@@ -34,13 +34,9 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between h-20">
-        <a href="#beranda" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-sm bg-gradient-copper flex items-center justify-center font-display font-black text-white text-lg shadow-copper">
-            A
-          </div>
-          <div className="leading-tight">
-            <div className="font-display font-extrabold text-white tracking-wide text-lg">AIMRI</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-silver/80">Mineral Indonesia</div>
+        <a href="/#beranda" className="flex items-center group">
+          <div className="h-16 md:h-20 flex items-center justify-center">
+            <img src={logo} alt="Logo AIMRI" className="h-full w-auto object-contain scale-150 origin-left drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]" />
           </div>
         </a>
 
@@ -56,8 +52,13 @@ export const Navbar = () => {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Button variant="copper" size="sm">Gabung Menjadi Anggota</Button>
+        <div className="hidden lg:flex items-center gap-4">
+          <a href="/members" className="text-sm font-medium text-silver hover:text-copper transition-colors">
+            Direktori Anggota
+          </a>
+          <Button variant="copper" size="sm" onClick={() => window.location.href = '/login'}>
+            Login Anggota
+          </Button>
         </div>
 
         <button

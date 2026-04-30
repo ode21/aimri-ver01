@@ -1,16 +1,17 @@
-import { Factory, Pickaxe, Briefcase, Ship, Leaf, GraduationCap, TreePine, Users2, Wrench, FlaskConical } from "lucide-react";
+import { Factory, Pickaxe, Briefcase, Ship, Leaf, GraduationCap, TreePine, Users2, Wrench, FlaskConical, Map, Truck } from "lucide-react";
 
 const categories = [
-  { icon: Pickaxe, label: "IUP Produksi Nikel" },
-  { icon: FlaskConical, label: "IUP Eksplorasi Nikel" },
-  { icon: Wrench, label: "Jasa Pertambangan (SIUJP)" },
+  { icon: Map, label: "Wilayah Izin Usaha Pertambangan (WIUP)" },
+  { icon: FlaskConical, label: "Izin Usaha Pertambangan Eksplorasi (IUP Eksplorasi)" },
+  { icon: Pickaxe, label: "Izin Usaha Pertambangan Operasi Produksi (IUP OP)" },
+  { icon: Wrench, label: "Izin Usaha Jasa Pertambangan (IUJP)" },
+  { icon: Factory, label: "Izin Pengangkutan Penjualan (IPP)" },
+  { icon: Leaf, label: "Perusahaan Lingkungan Hidup" },
+  { icon: TreePine, label: "Konsultan Lingkungan Hidup" },
   { icon: Briefcase, label: "Konsultan Pertambangan" },
-  { icon: Factory, label: "Pertambangan Batubara" },
-  { icon: Ship, label: "Perusahaan Pelayaran" },
-  { icon: Leaf, label: "Perusahaan Lingkungan" },
+  { icon: Truck, label: "Perusahaan Angkutan Transportasi" },
   { icon: GraduationCap, label: "Institusi Pendidikan" },
-  { icon: TreePine, label: "Komunitas Lingkungan" },
-  { icon: Users2, label: "NGO Lingkungan" },
+  { icon: Users2, label: "Non-Government Organization (NGO) Lingkungan Hidup" },
 ];
 
 export const Membership = () => {
@@ -23,7 +24,7 @@ export const Membership = () => {
               Keanggotaan
             </div>
             <h2 className="font-display font-black text-3xl md:text-5xl text-foreground leading-tight mb-6">
-              <span className="text-gradient-copper">105</span> Anggota Bersinergi.
+              <span className="text-gradient-copper">103</span> Anggota Bersinergi.
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               AIMRI menyatukan beragam pemangku kepentingan industri mineral dalam satu ekosistem strategis yang kuat dan berkelanjutan.

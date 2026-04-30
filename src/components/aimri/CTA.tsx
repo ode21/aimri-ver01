@@ -22,7 +22,7 @@ export const CTA = () => {
           <span className="text-gradient-copper">industri mineral</span> Indonesia.
         </h2>
         <p className="text-silver text-lg mb-10">
-          Bergabunglah dengan 105+ perusahaan, institusi, dan organisasi yang membentuk arah industri mineral nasional.
+          Bergabunglah dengan 103+ perusahaan, institusi, dan organisasi yang membentuk arah industri mineral nasional.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button variant="copper" size="lg" className="group">
